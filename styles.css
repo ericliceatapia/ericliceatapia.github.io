@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --tcu-purple: #471c74;
+}
+
+* {
+    box-sizing: border-box;
+    text-rendering: geometricPrecision;
+    /* border: .5px red solid; */
+}
+
+body {
+    margin: 0 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f0ef;
+    font-family: "Optima", "Montserrat", sans-serif;
+    color: #333;
+}
+
+h1,
+h2 {
+    font-family: "Palatino Linotype", "Palatino", "Lora", serif;
+    font-weight: 700;
+}
+
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-nav {
+    display: flex;
+    gap: 1rem;
+}
+
+#main-footer {
+    margin: 1rem auto;
+    font-size: 0.8rem;
+}
