@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --tcu-purple: #471c74;
+    --tcu-gold: #c2b067;
+}
+
+* {
+    box-sizing: border-box;
+    text-rendering: geometricPrecision;
+    /* border: .5px red solid; */
+}
+
+body {
+    background-color: #f2f0ef;
+    font-family: "Optima", "Montserrat", sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#grad {
+    background: #fdfdfc;
+    max-width: 600px;
+    width: 100vw;
+    margin: 0;
+    padding: 20px 60px;
+    border-top: 8px solid var(--tcu-purple);
+    text-align: center;
+}
+
+#hero h1 {
+    font-family: "Palatino Linotype", "Palatino", "Lora", serif;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#hero p {
+    color: var(--tcu-gold);
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-top: -10px;
+}
+
+.big-moment {
+    margin: 20px 0;
+}
+
+.label {
+    display: block;
+    font-size: 0.9rem;
+    letter-spacing: 6px;
+    color: #888;
+    text-transform: uppercase;
+}
+
+.year {
+    display: block;
+    font-size: 8rem;
+    font-family: "Palatino Linotype", "Palatino", "Lora", serif;
+    font-weight: 700;
+    color: var(--tcu-purple);
+    line-height: 0.8;
+    letter-spacing: -4px;
+    margin-top: 5px;
+}
+
+#logistics {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 0;
+    border-top: 1px solid #eee;
+}
+
+#commencement,
+#convocation,
+#celebration {
+    text-align: left;
+    padding: 20px;
+    border-left: 4px solid var(--tcu-purple);
+    transition: transform 0.2s ease;
+}
+
+#commencement:hover,
+#convocation:hover,
+#celebration:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+#celebration {
+    border-left-color: var(--tcu-gold);
+    background: #f9f6ff;
+}
+
+#logistics p:first-child {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--tcu-purple);
+    margin-bottom: 5px;
+}
+
+#logistics p {
+    margin: 2px 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+#celebration a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: var(--tcu-purple);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+#details {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+#details a {
+    color: var(--tcu-purple);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px dashed var(--tcu-purple);
+}
+
+#main-footer {
+    margin: 1rem;
+}
+
+/* --- Mobile View Adjustments --- */
+@media (max-width: 600px) {
+    #grad {
+        width: 100%;
+        margin: 0;
+        padding: 40px 20px;
+        border-top-width: 12px;
+    }
+
+    #hero h1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .year {
+        font-size: 5rem;
+        letter-spacing: -2px;
+    }
+
+    .label {
+        font-size: 0.7rem;
+        letter-spacing: 4px;
+    }
+
+    #logistics {
+        padding: 20px 0;
+    }
+
+    #commencement,
+    #convocation,
+    #celebration {
+        padding: 15px;
+    }
+
+    #commencement:hover,
+    #convocation:hover,
+    #celebration:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
