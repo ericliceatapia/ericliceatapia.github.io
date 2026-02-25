@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Eric Licea Tapia//Graduation Invite//EN
+BEGIN:VEVENT
+UID:eric-grad-2026-05-17
+DTSTAMP:20260225T120000Z
+DTSTART:20260517T170000
+DTEND:20260517T210000
+SUMMARY:Eric's Graduation & Birthday Party
+LOCATION:2901 Billy B Ave, Arlington, TX 76010
+DESCRIPTION:Join us for a celebration of graduation and birthday!
+END:VEVENT
+END:VCALENDAR

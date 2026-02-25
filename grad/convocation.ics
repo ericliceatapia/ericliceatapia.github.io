@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Eric Licea Tapia//Graduation Invite//EN
+BEGIN:VEVENT
+UID:eric-grad-2026-05-09
+DTSTAMP:20260225T120000Z
+DTSTART:20260509T090000
+DTEND:20260509T110000
+SUMMARY:Eric's Graduation Convocation
+LOCATION:2850 Stadium Dr, Fort Worth, TX 76109
+DESCRIPTION:Join us for the Davis College of Science and Engineering Convocation!
+END:VEVENT
+END:VCALENDAR

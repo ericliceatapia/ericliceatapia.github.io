@@ -1,43 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
+    --black: #1a1a1a;
+    --white: #ffffff;
     --tcu-purple: #471c74;
 }
 
 * {
     box-sizing: border-box;
     text-rendering: geometricPrecision;
-    /* border: .5px red solid; */
+}
+
+*::selection {
+    background: #e8deff;
 }
 
 body {
-    margin: 0 1rem;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    background-color: #f2f0ef;
+    background: var(--white);
     font-family: "Optima", "Montserrat", sans-serif;
-    color: #333;
+    color: var(--black);
+    justify-content: center;
+    padding: 1rem;
 }
 
-h1,
-h2 {
-    font-family: "Palatino Linotype", "Palatino", "Lora", serif;
-    font-weight: 700;
-}
-
-#main-header {
+header {
+    border-bottom: 4px solid var(--tcu-purple);
+    padding-bottom: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#main-nav {
+nav {
     display: flex;
     gap: 1rem;
 }
 
-#main-footer {
-    margin: 1rem auto;
+footer {
+    margin-top: 3rem;
     font-size: 0.8rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Palatino Linotype", "Palatino", "Lora", serif;
+    font-size: 2.5rem;
+}
+
+a {
+    color: var(--tcu-purple);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--tcu-purple);
 }
