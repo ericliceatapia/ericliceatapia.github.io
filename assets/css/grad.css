@@ -33,8 +33,8 @@ body {
 
 header {
     border-bottom: 4px solid var(--tcu-purple);
-    padding-bottom: 2rem;
-    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .eyebrow {
@@ -67,7 +67,7 @@ a {
 .events {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .event-card h2 {
@@ -102,7 +102,7 @@ a {
 }
 
 footer {
-    margin-top: 3rem;
+    margin-top: 2rem;
     font-size: 0.8rem;
     text-align: center;
 }
